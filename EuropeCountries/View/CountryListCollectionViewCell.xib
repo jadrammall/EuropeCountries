@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CountryListCollectionViewCell" customModule="EuropeCountries" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Af-mN-HKj">
+                        <rect key="frame" x="2" y="2" width="120" height="76"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey1-IF-3ii">
+                        <rect key="frame" x="29.333333333333336" y="102" width="65.333333333333314" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcs-vy-6Tu">
+                        <rect key="frame" x="25" y="80" width="74" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vcs-vy-6Tu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dci-WD-Csq"/>
+                <constraint firstItem="vcs-vy-6Tu" firstAttribute="top" secondItem="4Af-mN-HKj" secondAttribute="bottom" constant="2" id="NNG-RG-cXA"/>
+                <constraint firstItem="4Af-mN-HKj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Z1n-mc-7CV"/>
+                <constraint firstAttribute="bottom" secondItem="Ey1-IF-3ii" secondAttribute="bottom" constant="2" id="Zj6-AV-tTv"/>
+                <constraint firstAttribute="trailing" secondItem="4Af-mN-HKj" secondAttribute="trailing" constant="2" id="bEX-9d-n8I"/>
+                <constraint firstItem="4Af-mN-HKj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="do7-ue-n7z"/>
+                <constraint firstItem="Ey1-IF-3ii" firstAttribute="top" secondItem="vcs-vy-6Tu" secondAttribute="bottom" constant="2" id="htf-Zu-7Sc"/>
+                <constraint firstItem="Ey1-IF-3ii" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sVn-0d-hgs"/>
+                <constraint firstItem="4Af-mN-HKj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="x71-20-piW"/>
+            </constraints>
+            <size key="customSize" width="190" height="194"/>
+            <connections>
+                <outlet property="countryCapitalLabel" destination="Ey1-IF-3ii" id="jbr-L6-l8q"/>
+                <outlet property="countryFlagImage" destination="4Af-mN-HKj" id="u4d-a0-4HN"/>
+                <outlet property="countryNameLabel" destination="vcs-vy-6Tu" id="v5G-nj-5Y8"/>
+            </connections>
+            <point key="canvasLocation" x="245.80152671755724" y="71.126760563380287"/>
+        </collectionViewCell>
+    </objects>
+</document>
